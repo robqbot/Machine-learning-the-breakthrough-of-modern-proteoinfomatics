@@ -320,3 +320,17 @@
   description = {The choice of activation functions in deep networks has a significant effect on the training dynamics and task performance. Currently, the most successful and widely-used activation function is the Rectified Linear Unit (ReLU). Although various hand-designed alternatives to ReLU have been proposed, none have managed to replace it due to inconsistent gains. In this work, we propose to leverage automatic search techniques to discover new activation functions. Using a combination of exhaustive and reinforcement learning-based search, we discover multiple novel activation functions. We verify the effectiveness of the searches by conducting an empirical evaluation with the best discovered activation function. Our experiments show that the best discovered activation function, $f(x) = x \cdot \text{sigmoid}(βx)$, which we name Swish, tends to work better than ReLU on deeper models across a number of challenging datasets. For example, simply replacing ReLUs with Swish units improves top-1 classification accuracy on ImageNet by 0.9\% for Mobile NASNet-A and 0.6\% for Inception-ResNet-v2. The simplicity of Swish and its similarity to ReLU make it easy for practitioners to replace ReLUs with Swish units in any neural network.},
   note = {Accessed on Mon, March 04, 2019},
 }
+
+
+@inproceedings{Goodfellow:2013:MN:3042817.3043084,
+  author = {Goodfellow, Ian J. and Warde-Farley, David and Mirza, Mehdi and Courville, Aaron and Bengio, Yoshua},
+  title = {{Maxout Networks}},
+  booktitle = {Proceedings of the 30th International Conference on International Conference on Machine Learning - Volume 28},
+  series = {ICML'13},
+  year = {2013},
+  location = {Atlanta, GA, USA},
+  pages = {III-1319--III-1327},
+  url = {http://dl.acm.org/citation.cfm?id=3042817.3043084},
+  acmid = {3043084},
+  publisher = {JMLR.org},
+}
