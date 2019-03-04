@@ -78,7 +78,7 @@ Softplus function is also referred as SmoothReLU function, which is another vari
 
 \begin{equation}
     g_i(x) = \max_{j\in{1,k}}(z_{ij}), z_{ij} = x^T \cdot W_{ij} + b_{ij} \iff
-    \mathcal{G}(\vec{X}) = max(\mathcal{W}^T\vec{X} + B) 
+    \mathcal{G}(\vec{X}) = max(\mathcal{W}^T\vec{X} + \mathcal{W}B) 
 \end{equation}
 
 where $x\in\mathbb{R}^d$, that can be either input vector $\upsilon$ or previous hidden layer's state vector $\mathcal{p}$. Both weight matrix $\mathcal{W}\in\mathbb{R}^{d,m,k}$ and 
