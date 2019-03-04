@@ -81,5 +81,5 @@ Softplus function is also referred as SmoothReLU function, which is another vari
     \mathcal{G}(\vec{X}) = max(\mathcal{W}^T\vec{X} + \mathcal{B}) 
 \end{equation}
 
-where $x\in\mathbb{R}^d$, that can be either input vector $\upsilon$ or previous hidden layer's state vector $\mathcal{p}$. Both weight matrix $\mathcal{W}\in\mathbb{R}^{d\times m\times	k}$ and bias matrix $\mathcal{B}\in\mathbb{R}^{m\times k}$ are trainable. The third dimension of the weight matrix $\mathcal{W}$ corresponds to the connection state of neighbouring layers. Maxout function is a generalisation of RELU and its variants, as RELU is a special case when $\mathcal{W} = \mathcal{I}_d$ and $\mathcal{B}=0$. The maxout neuron inherits the great convergent rate from RELU with 
+where $x\in\mathbb{R}^d$, that can be either input vector $\upsilon$ or previous hidden layer's state vector $\mathcal{p}$. Both weight matrix $\mathcal{W}\in\mathbb{R}^{d\times m\times	k}$ and bias matrix $\mathcal{B}\in\mathbb{R}^{m\times k}$ are trainable. The third dimension of the weight matrix $\mathcal{W}$ corresponds to the connection state of neighbouring layers. Maxout function is a generalisation of RELU and its variants, as RELU is a special case when $\mathcal{W} = \mathcal{I}_d$ and $\mathcal{B}=0$. The maxout neuron inherits the great convergent rate from RELU and limite 
 \end{enumerate}
