@@ -39,6 +39,11 @@ RELU function has threshold at zero, which is only activated when $x > 0$ and in
 There are a few attempts to correct such deadlock vulnerability in RELU by create RELU variant models, noticeably, leaky RELU and softplus are among those variants. Leaky RELU prevents deadlock during training by assigning a small, negligible positive gradient to dormant neurons, which adopts the form: 
 
 \begin{equation}
+    X(m,n) = \left\{\begin{array}{lr}
+        x(n), & \text{for } 0\leq n\leq 1\\
+        x(n-1), & \text{for } 0\leq n\leq 1\\
+        x(n-1), & \text{for } 0\leq n\leq 1
+        \end{array}\right\} = xy
 \end{equation}
 
 \item Maxout \\
