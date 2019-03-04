@@ -36,7 +36,8 @@ RELU adopts form as:
 \end{equation}
 RELU function has threshold at zero, which is only activated when $x > 0$ and increase linearly thereafter with slope 1.~\citet{Krizhevsky_2017} has found greater stochastic gradient descent convergence rate with RELU up to 6 times faster when compared to sigmoid activation functions. In addition, the implementation of RELU is much less computational heavy than sigmoid (i.e. involving exponential operations), whereas RELU can be implemented via an activation matrix at threshold zero. Therefore, RELU is arguably the most wildly implemented activation function for ANN models.~\cite{Bengio_2012,Toth_2013,Jaitly_2011,nga}  Nevertheless, RELU is not free without issues. Although the stochastic gradient convergence property of RELU is greater than most of the activation functions, RELU is less perceptible to aggressive learning rate. This adverse effect is observable when a too steep convergence gradient passing through RELU neurons in training, which can cause the contributing weight of such neurons to deadlock to zero. It is not unheard of that substantial portion of RELU activated neurons in the network are deadlocked during training, which can result a zombie network. 
 \par 
-a
+There are a few attempts to correct such deadlock vulnerability in RELU by create RELU variant models, noticeably, leaky RELU and softplus are among those variants. Leaky RELU prevents deadlock during training by si a small, negligible positive gradient when neuron is not  
+
 \item Maxout \\
 
 \end{enumerate}
