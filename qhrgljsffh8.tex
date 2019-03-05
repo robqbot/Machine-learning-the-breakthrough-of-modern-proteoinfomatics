@@ -1,0 +1,84 @@
+
+\subsubsection{Actiation functions~\textit{g}}
+The activation functions are critical component of ANN models, which simulate the transformation from input layer to output layer, that is generally non-linear in nature~\cite{LeCun_2015}. Various studies~\cite{Bengio_2012,Singh_2013} have demonstrated the importance of selecting proper activation function for a given scenario, which can lead to improved feature extraction. There are a few classes of commonly used activation functions as follows:
+\begin{enumerate}
+\item Sigmoid function \\
+Sigmoid function is often characterised by its sigmoid curve, which is bounded by a pair of horizontal asymptotes as $x$ reaches infinity. Historically, sigmoid function has been commonly acted as activation function, as it transform input from open range continuous real numbers to a value range from 0 to 1, it often take the forms of either logistic function:
+
+\begin{equation}
+    g(x) = \frac{1} {1+ e^{-x}}
+\end{equation}
+
+or scaled logistic function, which commonly adopts the form of hyperbolic tangent
+
+\begin{equation}
+    g(x) = tanh(x) = \frac{e^x-e^{-x}} {e^x + e^{-x}} = \frac {2} {1 + e^{-2x}} = 2 sigmoid(2x) - 1
+\end{equation}
+
+However, as Figure shown, logistic function plateaus at either 0 or 1, which results nodes saturation around plateau and convergence gradients at both regions are approaching 0, which results an inefficient learning. Furthermore, logistic output $g(x) \geq 0$, this will only allow the gradient descent on the same side, which in turn may cause zigzag effect during training and slow the convergence. 
+
+\item Softmax \\
+Softmax returns a probability vector, which sums to 1. This property is applicable in transforming logits scores (i.e.  categorical distribution) into probability and the implementation largely occurs at the output layer. Softmax function is also known as normalized exponential function~\cite{Howard_2007}, which adapts the form: 
+
+\begin{equation}
+    g(x) = \frac{e^{x_i}} {\sum_k e^{x_k}}
+\end{equation}
+
+where $x_i$ represents each element of input vector $X$ with a total of $k$ number of elements. 
+
+\item Rectified Linear Unit (RELU) \\
+RELU adopts form as:
+
+\begin{equation}
+    g(x) = \max(0,x)
+\end{equation}
+
+RELU function has threshold at zero, which is only activated when $x > 0$ and increase linearly thereafter with slope 1.~\citet{Krizhevsky_2017} has found greater stochastic gradient descent convergence rate with RELU up to 6 times faster when compared to sigmoid activation functions. In addition, the implementation of RELU is much less computational heavy than sigmoid (i.e. involving exponential operations), whereas RELU can be implemented via an activation matrix at threshold zero. Therefore, RELU is arguably the most wildly and most popular implemented activation function for ANN models.~\cite{Bengio_2012,Toth_2013,Jaitly_2011,nga,LeCun_2015,}  Nevertheless, RELU is not free without issues. Although the stochastic gradient convergence property of RELU is greater than most of the activation functions, RELU is less perceptible to aggressive learning rate. This adverse effect is observable when a too steep convergence gradient passing through RELU neurons in training, which can cause the contributing weight of such neurons to deadlock to zero. It is not unheard of that substantial portion of RELU activated neurons in the network are deadlocked during training, which can result a zombie network. 
+\par 
+There are a few attempts to correct such deadlock vulnerability in RELU by create RELU variant models, noticeably, leaky RELU and softplus are among those variants. Leaky RELU prevents deadlock during training by assigning a small, negligible positive gradient to dormant neurons, which adopts the form: 
+
+\begin{equation}
+    g(x) = \left\{ 
+    \begin{array}{lr}
+        x & \text{for } x > 0 \\
+        0.01x & \text{for } x\leq 0
+    \end{array}\right.
+\end{equation}
+
+on the basis of leaky RELU,~\citet{He_2015} has introduced a Parametric Rectified Linear Unit (PReLU), which adopts following form:
+
+\begin{equation}
+    g(x) = \left\{ 
+    \begin{array}{lr}
+        x & \text{for } x > 0 \\
+        a_{i}x & \text{for } x\leq 0
+    \end{array}\right.
+\end{equation}
+
+where $a_{i}$ represents leakage parameter, which is generally small and trainable for each node (neuron). Nonetheless, the consistent benefits of PReLU need further investigation. 
+\par 
+Softplus function is also referred as SmoothReLU function, which is another variation of RELU. As name suggested, softplus smooth out the approximation of RELU from negative to positive range, this smooth effect is particular noticeable at boundary $x=0$, which in turn, softplus function is differentiable throughout range. Softplus function adopts the form of   
+
+\begin{equation}
+    g(x) = ln(1+e^{x})
+\end{equation}
+
+\item Maxout \\
+\citealt{Goodfellow:2013:MN:3042817.3043084} has introduced a maxout neuron, which adopts the form:
+
+\begin{equation}
+    g_i(x) = \max_{j\in[1,k]}(z_{ij}), z_{ij} = x^T \cdot W_{ij} + b_{ij} \iff
+    \mathcal{G}(\vec{X}) = max(\mathcal{W}^T\vec{X} + \mathcal{B}) 
+\end{equation}
+
+where $x\in\mathbb{R}^d$, that can be either input vector $\upsilon$ or previous hidden layer's state vector $\mathcal{p}$. Both weight matrix $\mathcal{W}\in\mathbb{R}^{d\times m\times	k}$ and bias matrix $\mathcal{B}\in\mathbb{R}^{m\times k}$ are trainable. The third dimension of the weight matrix $\mathcal{W}$ corresponds to the connection state of neighbouring layers. Maxout function is a generalisation of RELU and its variants, as RELU is a special case when $\mathcal{W} = \mathcal{I}_d$ and $\mathcal{B}=0$. The maxout neuron inherits the great convergent rate from RELU and limits the zombie network during training. Maxout neuron networks possess large array of parameters, given each maxout neuron possess twice as many parameters compare to its RELU counterpart, it may be more prone to overfitting when network is large and training dataset is small. 
+
+\item Sinusoid \\
+\citet{Gashler_2014} proposed sinusoidal activation function enabled artificial neural network to study time series dataset. Sinusoidal activation function is simply a sine function as shown below, nevertheless sinusoidal activated neural network seems efficient in extrapolating features from Fourier series data frame~\cite{Gashler_2014}, which may have wild applications in studying features from signalling and time series data. 
+
+\begin{equation}
+    g(x) = sin(x)
+\end{equation}
+\end{enumerate}
+
+Although each neuron within a given network can have individual preference of activation mode and adapts different activation functions, it is extremely rare in practise to have a mixed neuron in the same network due to added complexity in training and management. 
