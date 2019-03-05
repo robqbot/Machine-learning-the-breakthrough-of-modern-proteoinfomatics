@@ -13,7 +13,7 @@ or scaled logistic function, which commonly adopts the form of hyperbolic tangen
     g(x) = tanh(x) = \frac{e^x-e^{-x}} {e^x + e^{-x}} = \frac {2} {1 + e^{-2x}} = 2 sigmoid(2x) - 1
 \end{equation}
 
-However, as Figure~ shown, logistic function plateaus at either 0 or 1, which results nodes saturation around plateau and convergence gradients at both regions are approaching 0, which results an inefficient learning. Furthermore, logistic output $g(x) \geq 0$, this will only allow the gradient descent on the same side, which in turn may cause zigzag effect during training and slow the convergence. 
+However, as Figure~\ref{207704} shown, logistic function plateaus at either 0 or 1, which results nodes saturation around plateau and convergence gradients at both regions are approaching 0, which results an inefficient learning. Furthermore, logistic output $g(x) \geq 0$, this will only allow the gradient descent on the same side, which in turn may cause zigzag effect during training and slow the convergence. 
 
 \item Softmax \\
 Softmax returns a probability vector, which sums to 1. This property is applicable in transforming logits scores (i.e.  categorical distribution) into probability and the implementation largely occurs at the output layer. Softmax function is also known as normalized exponential function~\cite{Howard_2007}, which adapts the form: 
