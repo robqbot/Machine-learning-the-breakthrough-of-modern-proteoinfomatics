@@ -3,7 +3,6 @@ bhl4m27apmo.tex
 qn2fu9f6bd8.tex
 jlrdf0n35l.tex
 qhrgljsffh8.tex
-figures/2rgu_screenshot
 figures/ANN_activation
 bed31pp549.tex
 vn6m4dk2td8.tex
