@@ -7,6 +7,6 @@ The implementation of an optimization objective function in machine learning app
     \mathcal{Obj}(\mathcal{X},y,\phi) = \mathcal{L}(f(\mathcal{X}|\phi) + \lambda \mathcal{R} (\phi) 
 \end{equation}
 
-where $\lambda$ is the regularization parameter, $\mathcal{R}$ is the regularization term, which can be trained for individual model. $\mathcal{L}(f(\mathcal{X}|\phi)$ measures the difference between the predicted outcome using resulted model $(f(\mathcal{X}|\phi)$ and expected outcome, which often measured using cross entropy and can also be optimized during training. 
+where $\lambda$ is the regularization parameter, $\mathcal{R}$ is the regularization term, which can be trained for individual model. $\mathcal{L}(f(\mathcal{X}|\phi)$ measures the difference between the predicted outcome using resulted model$(f(\mathcal{X}|\phi)$ and expected outcome, which often measured using cross entropy and can also be optimized during training. 
 \par 
 A typical objective function used in ANN needs to be differentiable and this is because modern model training uses back-propagation method~\cite{LeCun_2015,Heaton_2017} to update the weights of each neuron in the network, which involves calculating the gradient of the objective function with respect to weights $\frac {\partial{C}} {\partial{w_{ij}}} $.
