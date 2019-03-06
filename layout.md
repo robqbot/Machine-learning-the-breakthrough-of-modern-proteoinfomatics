@@ -9,6 +9,7 @@ vn6m4dk2td8.tex
 jlrdf0n35l.tex
 15gbo41cr18.tex
 figures/2rgu_screenshot
+figures/model_fit
 2li9ds4gacg.tex
 d07hk434jkg.tex
 figures/ANN
