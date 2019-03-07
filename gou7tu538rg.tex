@@ -1,0 +1,16 @@
+
+The main purpose of regularization term is to reduce model complexity and help to avoid model overfitting problem by penalising the overly complex models. There are a few types of regularization that are popular, $L^1$ and $L^2$ are among the preferred choices, but the noticeable difference persist between the two. $L_1$ adopts form:
+
+\begin{equation}
+   \Omega(\phi) = \lambda \sum \parallel \mathcal{w} \parallel
+\end{equation}
+
+where $\mathcal{w}$ indicates all node weights that are affected by the regularization. 
+\par 
+The gradient of $L^1$ regularization is non-linear sign function $sign (\mathcal{w})$, which does not has a trivial algebraic solution for the optimisation function $\mathcal{Obj}(\mathcal{X},\mathcal{y},\phi)$. Practically, one main difference between $L^1$ and $L^2$ is that $L^1$ can penalise the weight of a neuron to zero whereas $L^2$ penalise the weight towards zero but not equal to zero. In another words, $L^1$ tend to result a more sparse model and for this reason, $L^2$ is generally prefer over $L^1$ unless we purposefully compress model.
+
+$L^2$ has the form:
+\begin{equation}
+   \Omega(\phi) = \frac {\lambda}{2} \parallel \mathcal{w} \parallel^2
+\end{equation}
+$L^2$ regularization also commonly referred as weight decay, ridge regression or Tikhonov regularization. The optimum $\mathcal{w}$ in $L^2$ regularization can be solved algebraically with the help of positive semi-definite $\mathcal{H}$~\cite{Goodfellow-et-al-2016}, so called Hessian matrix. The detailed derivation has been detailed by~\citet{Goodfellow-et-al-2016}.
