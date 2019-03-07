@@ -4,7 +4,7 @@ The ability to learn (i.e. train) an ANN model to fit for a specific context has
 The implementation of an optimization objective function in machine learning applies the same principle and generally adopts two terms regularization and loss term. The collective efforts to generalize the prediction is summarised as regularization term~\cite{goodfellow_2015}, the loss term describes the measured off-target discrepancy between prediction using model $f(x|\phi)$ (where $x$ is the input vector and $\phi$ is model parameter matrix) and the actual target, which is an evaluator of model fitness. Regularization term also has the main purpose to reduce the complexity of model structure by penalising over complex structure and therefore, reduce concerns over overfitting. A typical optimization objective function can have the form:
 
 \begin{equation}
-    \mathcal{Obj}(\mathcal{X},y,\phi) = \mathcal{L}(f(\mathcal{X}|\phi) + \lambda \alpha\Omega(\the) (\phi) 
+    \mathcal{Obj}(\mathcal{X},y,\phi) = \mathcal{L}(f(\mathcal{X}|\phi) + \lambda \alpha\Omega(\theta) (\phi) 
 \end{equation}
 
 where $\lambda$ is the regularization parameter, $\mathcal{R}$ is the regularization term, which can be trained for individual model. $\mathcal{L}(f(\mathcal{X}|\phi)$ measures the difference between the predicted outcome using model $f(\mathcal{X}|\phi)$ and expected outcome, which often measured using cross entropy and can also be optimized during training. 
