@@ -2,7 +2,7 @@
 The main purpose of regularization term is to reduce model complexity and help to avoid model overfitting problem by penalising the overly complex models. There are a few types of regularization that are popular, $L^1$ and $L^2$ are among the preferred choices, but there is the noticeable difference between the two. $L_1$ commonly known as LASSO regularization (least absolute shrinkage and selection operator), which was firstly introduced by~\citet{Santosa_1986}, later popularized by~\citet{Tibshirani_1996} and adopts form:
 
 \begin{equation}
-   \Omega(\phi) = \lambda \sum_ | \mathcal{w_i} |
+   \Omega(\phi) = \lambda \sum_i | \mathcal{w_i} |
 \end{equation}
 
 where $\mathcal{w}$ indicates all node weights that are affected by the regularization. The modulus | \mathcal{w} | is the penalty term. $\lambda$ is a pre-selected free parameter that determines the degree of penalty for over complex neuron networks. 
@@ -11,6 +11,6 @@ The gradient of $L^1$ regularization is non-linear sign function $sign (\mathcal
 
 $L^2$ has the form:
 \begin{equation}
-   \Omega(\phi) = \lambda\sum | \mathcal{w} |^2
+   \Omega(\phi) = \lambda\sum_i | \mathcal{w} |^2
 \end{equation}
 $L^2$ regularization also commonly referred as weight decay, ridge regression or Tikhonov regularization. The optimum $\mathcal{w}$ in $L^2$ regularization can be solved algebraically with the help of positive semi-definite $\mathcal{H}$~\cite{Goodfellow-et-al-2016}, so called Hessian matrix. The detailed derivation has been detailed by~\citet{Goodfellow-et-al-2016}.
