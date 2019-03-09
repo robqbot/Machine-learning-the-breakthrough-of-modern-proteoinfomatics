@@ -11,7 +11,6 @@ figures/Overfitting_combined
 gou7tu538rg.tex
 figures/Lasso
 3o3e3gtmhjg.tex
-5a3gdkubs38.tex
 urjquds0a3.html
 2li9ds4gacg.tex
 d07hk434jkg.tex
@@ -24,4 +23,5 @@ i3a65pe9j4o.tex
 777p77kh8kg.tex
 e4c730aijlg.tex
 untitled.html
+5a3gdkubs38.tex
 imj65four78.html
