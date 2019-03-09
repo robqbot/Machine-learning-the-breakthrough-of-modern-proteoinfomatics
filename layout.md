@@ -5,7 +5,6 @@ qhrgljsffh8.tex
 figures/ANN_activation
 bed31pp549.tex
 vn6m4dk2td8.tex
-5a3gdkubs38.tex
 jlrdf0n35l.tex
 15gbo41cr18.tex
 gou7tu538rg.tex
@@ -13,6 +12,7 @@ figures/Lasso
 3o3e3gtmhjg.tex
 figures/Overfitting_combined
 imj65four78.html
+5a3gdkubs38.tex
 urjquds0a3.html
 2li9ds4gacg.tex
 d07hk434jkg.tex
