@@ -13,6 +13,7 @@ figures/Lasso
 3o3e3gtmhjg.tex
 imj65four78.html
 untitled.html
+5a3gdkubs38.tex
 urjquds0a3.html
 2li9ds4gacg.tex
 d07hk434jkg.tex
@@ -24,4 +25,3 @@ bc5k8o2n2rg.tex
 i3a65pe9j4o.tex
 777p77kh8kg.tex
 e4c730aijlg.tex
-5a3gdkubs38.tex
