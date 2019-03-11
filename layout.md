@@ -14,7 +14,6 @@ figures/Lasso
 imj65four78.html
 untitled.html
 6b5ojgseeno.tex
-figures/2rgu_screenshot
 figures/Loss_Functions
 5a3gdkubs38.tex
 urjquds0a3.html
