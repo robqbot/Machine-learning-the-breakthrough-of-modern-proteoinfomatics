@@ -30,7 +30,7 @@ Similar to hinge loss, the exponential loss impose more severe penalty on the mo
     \mathcal{L}(y) = \frac {1}{n} \sum_i^n e^{-\lambda y \cdot \hat{y}}
 \end{equation}
     \item Kullback Leibler (KL) Divergence\\
-KL divergence better known as relative entropy, is a probabilistic measurement on the divergence of predicted distribution to expected distribution. Given that the prediction has th distribution KL divergence can be interpreted as the difference between cross entropy $\mathbf{H}_p(q)$ and entropy of training data $\mathbf{H}(q)$ which can take the form of:
+KL divergence better known as relative entropy, is a probabilistic measurement on the divergence of predicted distribution to expected distribution. Given that the prediction has the distribution KL divergence can be interpreted as the difference between cross entropy $\mathbf{H}_p(q)$ and entropy of training data $\mathbf{H}(q)$ which can take the form of:
 \begin{equation}
     \mathcal{D}_{KL}(p \parallel q) = \mathbf{H}_p(q) - H(q) = \frac{1}{n}\sum_{i=1}^n [\hat{y}_i \cdot log(\hat{y}_i)] -\frac{1}{n}\sum_{i=1}^n [y \cdot log\hat{y_i}]
 \end{equation}
