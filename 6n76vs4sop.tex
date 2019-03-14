@@ -9,13 +9,7 @@ MSE has the form:
 where $\hat{x}_i$ is the estimator and $x_i$ is the actual value. 
     \item Likehood Loss \\
 Likehood loss is commonly used in classification models. Although the the approach is an empirical, it is helpful in comparing model performance. 
-    \item Cross Entropy \\
-Cross entropy is also known as log loss and is widely applicable in binary classification, which is extremely popular in visual pattern recognition application with convolutional neural network, which has the form:
-\begin{equation}
-    \mathcal{L} = -\frac{1}{n}\sum_{i=1}^n [y_i \times log\hat{y_i} +(1-y_i) \times log(1-\hat{y_i}) ] 
-\end{equation}
-
-The function measure the divergence between the distribution of predicted values and distribution of observed values. One advantage of cross entropy loss is that algorithm provides fast convergence and allows quick learning, this is particularly advantageous for neurons constructed with sigmoid activation functions. 
+    \item 
     \item Other forms\\
 There are many loss forms in the literature with their own advantages and disadvantages like Mean Squared Logarithmic Error (MSLE), which adopts the form:
 
