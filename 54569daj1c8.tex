@@ -1,0 +1,40 @@
+\paragraph {Loss functions for Classification models}
+Common loss functions used for classification models include:
+
+\begin{enumerate}
+    \item Hinge Loss/Multi-class Support Vector Machines (SVMs) Loss \\
+Hinge Loss commonly used for max-margin classification, Hinge loss works well as a training classifier in SVMs~\cite{Cortes_1995}. Given the intended output from SVMs $\hat{y} = \pm m$, in binary classification $m = 1$, $y$ is the prediction, the hinge loss of prediction $y$ given by:
+\begin {equation}
+    \mathcal{L}(y) = \frac {1}{n} \sum_i^n max(0,m - y_i \cdot \hat{y})
+\end{equation}
+It is clear that the penalty on the hinge loss increases linearly as the prediction $y$ deviates from true value $\hat{y}$.
+    \item Exponential Loss \\
+Similar to hinge loss, the exponential loss impose more severe penalty on the model if the prediction is not consist with expectancy. The exponential loss is given by:
+\begin {equation}
+    \mathcal{L}(y) = \frac {1}{n} \sum_i^n e^{-\lambda y \cdot \hat{y}}
+\end{equation}
+    \item Cross Entropy \\
+Cross entropy is also known as log loss and is widely applicable in binary classification, which is arguably the most used loss function in visual pattern recognition with convolutional neural networks. Here, we demonstrate the binary setup, where two class can be defined as 1 (positive group) and 0 (negative group), thus cross entropy defined as:
+\begin{equation}
+   \mathbf{H}_p(q) = \left\{ 
+    \begin{array}{ll}
+        log(\mathrm{prob}(y_i)) & y_i = 1~\text{(i.e.} y_i~\text{in positive class)}  \\
+        log(\mathrm{prob}(1-y_i)) & y_i = 0~\text{(i.e.} y_i~\text{in negative class)}  
+    \end{array}\right.
+\end{equation}
+
+Therefore the cross entropy loss function can take the form as:
+\begin{equation}
+    \mathcal{L} = -\frac{1}{n}\sum_{i=1}^n [y_i \times log\hat{y_i} +(1-y_i) \times log(1-\hat{y_i}) ] 
+\end{equation}
+
+The function measure the divergence between the distribution of predicted values and distribution of observed values. One advantage of cross entropy loss is that this algorithm provides fast convergence and allows quick learning, this is particularly advantageous for neurons constructed with sigmoid activation functions, as state earlier sigmoid function can converge slowly under some circumstances.\\
+    \item Kullback Leibler (KL) Divergence\\
+KL divergence better known as relative entropy, is a probabilistic measurement on the divergence of predicted distribution to expected distribution. Given that the prediction has the distribution of $p$ and the training data has the distribution of $q$, KL divergence can be interpreted as the difference between cross entropy $\mathbf{H}_p(q)$ and entropy of training data $\mathbf{H}(q)$ which can take the form of:
+\begin{equation}
+    \begin{aligned}
+    \mathcal{L} &= \mathcal{D}_{KL}(p \parallel q) = \mathbf{H}_p(\mathrm{q}) - H(\mathrm{q}) \\
+    &= - \frac {1}{n} \sum_i^n \mathrm{p}_i \times log \mathrm{q}_i + \frac{1}{n}\sum_{i=1}^n [\mathrm{p}_i \times log \mathrm{p}_i] 
+    \end{aligned}
+\end{equation}
+\end {enumerate}
