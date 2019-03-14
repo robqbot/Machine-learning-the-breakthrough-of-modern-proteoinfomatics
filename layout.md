@@ -17,7 +17,6 @@ untitled.html
 figures/Loss_Functions
 5a3gdkubs38.tex
 6n76vs4sop.tex
-urjquds0a3.html
 2li9ds4gacg.tex
 d07hk434jkg.tex
 figures/ANN
