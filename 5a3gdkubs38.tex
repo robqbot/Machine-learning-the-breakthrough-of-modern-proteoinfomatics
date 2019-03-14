@@ -32,7 +32,7 @@ Similar to hinge loss, the exponential loss impose more severe penalty on the mo
     \item Kullback Leibler (KL) Divergence\\
 KL divergence better known as relative entropy, is a probabilistic measurement on the divergence of predicted distribution to expected distribution. KL divergence can be interpreted in term of cross entropy as the measurement of divergence between training data's entropy and the cross entropy of model prediction and training data, which has the form of:
 \begin{equation}
-    \mathcal{L} = -\frac{1}{n}\sum_{i=1}^n [y_i \times log\hat{y_i} +(1-y_i) \times log(1-\hat{y_i}) ]
+    \mathcal{L} = \match-\frac{1}{n}\sum_{i=1}^n [y_i \times log\hat{y_i} +(1-y_i) \times log(1-\hat{y_i}) ]
 \end{equation}
 \end {enumerate}
 
