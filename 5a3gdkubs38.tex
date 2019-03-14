@@ -33,7 +33,7 @@ Similar to hinge loss, the exponential loss impose more severe penalty on the mo
 KL divergence better known as relative entropy, is a probabilistic measurement on the divergence of predicted distribution to expected distribution. Given that the prediction has the distribution of $p$ and the training data has the distribution of $q$, KL divergence can be interpreted as the difference between cross entropy $\mathbf{H}_p(q)$ and entropy of training data $\mathbf{H}(q)$ which can take the form of:
 \begin{equation}
     \begin{align*}
-    \mathcal{L} &= \left \mathcal{D}_{KL}(p \parallel q) &= \mathbf{H}_p(\mathrm{q}) - H(\mathrm{q}) \right) \\
+    \mathcal{L} &= \left \mathcal{D}_{KL}(p \parallel q) &= \mathbf{H}_p(\mathrm{q}) - H(\mathrm{q}) \right \\
     &= \left (- \frac {1}{n} \sum_i^n \mathrm{p}_i \times log \mathrm{q}_i + \frac{1}{n}\sum_{i=1}^n [\mathrm{p}_i \times log \mathrm{p}_i] \right)
     \end{align*}
 \end{equation}
