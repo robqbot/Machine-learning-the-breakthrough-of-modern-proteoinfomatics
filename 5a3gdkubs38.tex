@@ -40,32 +40,3 @@ KL divergence better known as relative entropy, is a probabilistic measurement o
 where $\mathbf{H}(p)$ measures the training data's entropy
 \end {enumerate}
 
-Regressional models predict continuous values
-\begin{enumerate}
-    \item Mean Squared Error (MSE) \\
-MSE has the form:
-\begin{equation}
-    MSE = \frac{1}{n}\sum_{i=1}^n (\hat{x}_i - x_i)^2
-\end{equation}
-where $\hat{x}_i$ is the estimator and $x_i$ is the actual value. 
-    \item Likehood Loss \\
-Likehood loss is commonly used in classification models. Although the the approach is an empirical, it is helpful in comparing model performance. 
-    \item Cross Entropy \\
-Cross entropy is also known as log loss and is widely applicable in binary classification, which is extremely popular in visual pattern recognition application with convolutional neural network, which has the form:
-\begin{equation}
-    \mathcal{L} = -\frac{1}{n}\sum_{i=1}^n [y_i \times log\hat{y_i} +(1-y_i) \times log(1-\hat{y_i}) ] 
-\end{equation}
-
-The function measure the divergence between the distribution of predicted values and distribution of observed values. One advantage of cross entropy loss is that algorithm provides fast convergence and allows quick learning, this is particularly advantageous for neurons constructed with sigmoid activation functions. 
-    \item Other forms\\
-There are many loss forms in the literature with their own advantages and disadvantages like Mean Squared Logarithmic Error (MSLE), which adopts the form:
-
-\begin{equation}
-    \mathcal{L} = -\frac{1}{n}\sum_{i=1}^n [log (y_i + 1) -  log(\hat{y_i} + 1) ]^2 
-\end{equation}
-
-which has advantages in dealing with models that work with large absolute values, such scenario often attracts penalties during model training even the error percentage is low. 
-\end{enumerate}
-
-\par 
-One advantage of back propagation algorithm is that unlike other method, it can operate on non-normalized input vectors although additional normalization step will generally improve performance. \cite{Buckland:2002} The main theoretical challenge with gradient descent back propagation is that during optimisation, the gradient descent can stuck at local minimum and unable to reach the global minimum, this particularly concerning when error function is non-convex and the error surface is extremely rugged. Nevertheless,~\citet{LeCun_2015} argued this concern is largely theoretical and it is very unlikely to occur in majority practical applications. 
