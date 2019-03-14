@@ -14,7 +14,7 @@ MAE is referred as L1 loss in statistics, similar to MSE, MAE is also a common f
 \end{equation}
 This variation however made MAE is difficult to calculate gradient and heavy on computation. Nevertheless, due to its linear representation, MAE does offer balanced penalty on outlier errors, MSE on the other hand, can be easily dominated by the heavy penalty on this region, which may create undesired penalty profile. As a thumb of rule, MAE is more tolerant to outlier prediction and therefore MAE can be used in scenario where outlier is present in the population. MAE particularly useful if training data is contaminated and outlier is abundant. 
     \item Huber Loss\\
-Huber loss is introduced by~\citet{Huber_1964}, which is also known as smooth absolute error. Huber loss hybrids the advantages on both differentiable and tolerance on 
+Huber loss is introduced by~\citet{Huber_1964}, which is also known as smooth absolute error. Huber loss hybrids the advantages on both differentiabl and tolerance on 
     \item Other forms\\
 There are many loss forms in the literature with their own advantages and disadvantages like Mean Squared Logarithmic Error (MSLE), which adopts the form:
 
