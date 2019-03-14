@@ -14,8 +14,8 @@ figures/Lasso
 6b5ojgseeno.tex
 figures/Loss_Functions
 5a3gdkubs38.tex
-figures/Loss_Classification
 54569daj1c8.tex
+figures/Loss_Classification
 6n76vs4sop.tex
 2li9ds4gacg.tex
 d07hk434jkg.tex
