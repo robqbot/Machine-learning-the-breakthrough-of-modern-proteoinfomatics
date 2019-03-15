@@ -17,6 +17,7 @@ figures/Loss_Functions
 54569daj1c8.tex
 figures/Loss_Classification
 6n76vs4sop.tex
+figures/Loss_Regression
 2li9ds4gacg.tex
 d07hk434jkg.tex
 figures/ANN
