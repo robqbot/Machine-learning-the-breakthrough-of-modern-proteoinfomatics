@@ -31,6 +31,7 @@ Log cosh loss is defined as its name suggested: logarithm of hyperbolic cosine, 
 \begin{equation}
     \mathcal{L} = \sum_{i=1}^n log[cosh(y_i-\hat{y_i})]
 \end{equation}
+
 Similar to Huber loss, log cosh loss is also less sensitive to outlier influence and the function is not only continuous but also $2^{\circ}$ differentiable. Therefore, Huber loss is among the popular choices in model fitness evaluation that adopts Newton-Raphson method, which uses curvature (Hessian) to determine a fitter solution. 
     \item Other forms\\
 There are many loss forms in the literature with their own advantages like Mean Squared Logarithmic Error (MSLE), which adopts the form:
