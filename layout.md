@@ -1,5 +1,6 @@
 abstract.html
 bhl4m27apmo.tex
+figures/ANN
 qn2fu9f6bd8.tex
 qhrgljsffh8.tex
 figures/ANN_activation
@@ -20,7 +21,6 @@ figures/Loss_Classification
 figures/Loss_Regression
 2li9ds4gacg.tex
 d07hk434jkg.tex
-figures/ANN
 njbhpgj9b5.tex
 srljll42p5o.tex
 lip04p7omeg.tex
