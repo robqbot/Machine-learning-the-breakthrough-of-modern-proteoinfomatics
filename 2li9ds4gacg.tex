@@ -1,6 +1,6 @@
 \subsection {Learning Methods}
 By now, we have defined the objective function, which is a direct measurement of the fitness of our models. The purpose of model training is to make model more accurate in predicting outcomes, which can be achieved by minimising the discrepancy between current model prediction and known data and do it over and over again until satisfaction achieved. 
 \par 
-Although many aspects of model training can be conceptualized as optimisation problem, there are still some fundamental differences between the two worth to mention. One of such is model performance, this is more prevalent for large models in   
+Although many aspects of model training can be conceptualized as optimisation problem, there are still some fundamental differences between the two worth to mention. One of such is model performance, this is more prevalent for large models in production settings.   
 
 One advantage of back propagation algorithm is that unlike other method, it can operate on non-normalized input vectors although additional normalization step will generally improve performance. \cite{Buckland:2002} The main theoretical challenge with gradient descent back propagation is that during optimisation, the gradient descent can stuck at local minimum and unable to reach the global minimum, this particularly concerning when error function is non-convex and the error surface is extremely rugged. Nevertheless,~\citet{LeCun_2015} argued this concern is largely theoretical and it is very unlikely to occur in majority practical applications. 
