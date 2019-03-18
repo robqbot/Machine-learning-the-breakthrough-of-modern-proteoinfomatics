@@ -23,6 +23,7 @@ figures/Loss_Regression
 kfu8nhbqnu.tex
 5vejobqcbp8.tex
 16qf72ssc9g.tex
+figures/saddle-point
 d07hk434jkg.tex
 njbhpgj9b5.tex
 srljll42p5o.tex
