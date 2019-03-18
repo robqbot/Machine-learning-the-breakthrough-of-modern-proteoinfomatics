@@ -14,7 +14,7 @@ Hessian matrix $\mathrm{H}$ is defined as Jacobian of the gradient, which repres
     \item Saddle Points and Flat Regions\\
 In high dimensional model trainings, saddle points are more commonly encounter than local extremes (\citet{DauphinPGCGB14} provided a detailed review on theory), where it is both a local minimum within one cross-section and local maximum at a different cross section (Figure~\ref{555041}). At saddle points, Hessian matrix is filled with both positive and negative eigenvalues, where saddle points sit on the direction with positive eigenvalues have local minimum while on the direction with negative eigenvalues have local maximum. \\
 Proliferation of saddle points in high dimensional model trainings is problematic for Newton's method, where the algorithm is more prone to the attraction of saddle points. Although~\citet{DauphinPGCGB14} has invented a modified version of Newton's method this is claimed to be saddle-free, a larger application of such second order approach remains difficult. At the same time, first order algorithms like gradient descent seems to be able to escape such saddle regions~\cite{GoodfellowV14}.\\
-In addition to saddle points, flat regions of the optimisation space with constant value also posses challenges in model training. In those regions, both gradient and Hessian are zero, which in turn all numerical 
+In addition to saddle points, flat regions of the optimisation space with constant value also posses challenges in model training. In those regions, both gradient and Hessian are zero, which in turn all numerical evaluation mechni
 
 \end{enumerate}
 
