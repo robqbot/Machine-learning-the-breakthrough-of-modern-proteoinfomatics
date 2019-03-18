@@ -20,6 +20,8 @@ figures/Loss_Classification
 6n76vs4sop.tex
 figures/Loss_Regression
 2li9ds4gacg.tex
+kfu8nhbqnu.tex
+5vejobqcbp8.tex
 d07hk434jkg.tex
 njbhpgj9b5.tex
 srljll42p5o.tex
