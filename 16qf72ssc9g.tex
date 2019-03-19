@@ -16,6 +16,6 @@ In high dimensional model trainings, saddle points are more commonly encounter t
 Proliferation of saddle points in high dimensional model trainings is problematic for Newton's method, where the algorithm is more prone to the attraction of saddle points. Although~\citet{DauphinPGCGB14} has invented a modified version of Newton's method this is claimed to be saddle-free, a larger application of such second order approach remains difficult. At the same time, first order algorithms like gradient descent seems to be able to escape such saddle regions~\cite{GoodfellowV14}.\\
 In addition to saddle points, flat regions of the optimisation space with constant value also posses challenges in model training. In those regions, both gradient and Hessian are zero, which in turn all numerical evaluation mechanisms based on first order and second order can not function, however, in a convex setting, as almost all model trainings in machine learning are, such region corresponds to global minima. 
     \item Poor Local Representation \\
-It can  encounter poor local representation 
+It   encounter poor local representation 
 \end{enumerate}
 
