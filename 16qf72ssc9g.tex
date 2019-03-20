@@ -9,7 +9,7 @@ Ill conditioning is one of the most common challenges in numerical optimization.
 \begin{equation}
     f(x_0-\mu\mathcal{g}) \sim f(x_0) - \mu g^Tg + \frac{1}{2}\mu^2g^T\mathrm{H}g
 \end{equation}
-where $\mu$ is model training rate, $x_0$ is the previous evaluation point, $g$ and $\mathrm{H}$ are the gradient and Hessian matrix at $x_0$ respectively, therefore, current evaluation point given by $x_0-\mu\mathcal{g}$. The term $\mu g^Tg$ defines the
+where $\mu$ is model training rate, $x_0$ is the previous evaluation point, $g$ and $\mathrm{H}$ are the gradient and Hessian matrix at $x_0$ respectively, therefore, current evaluation point given by $x_0-\mu\mathcal{g}$. The term $\mu g^Tg$ defines the improvement due to t
 
 In multi-dimensional space, it is common to have different curvature (defined by $2^\circ$) at different direction 
 
