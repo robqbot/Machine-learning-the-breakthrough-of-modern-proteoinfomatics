@@ -12,7 +12,7 @@ Given the model step evaluation as:
     f(x_0-\mu\mathcal{g}) \sim f(x_0) - \mu g^Tg + \frac{1}{2}\mu^2g^T\mathrm{H}g
 \end{equation}
 where $\mu$ is model training rate, $x_0$ is the previous evaluation point, $g$ and $\mathrm{H}$ are the gradient and Hessian matrix at $x_0$ respectively, therefore, current evaluation point given by $x_0-\mu\mathcal{g}$. The term $\mu g^Tg$ defines the improvement quantity, $\frac{1}{2}\mu^2g^T\mathrm{H}g$ defines the correction due to curvature. 
-In gradient based Ill conditioning occurs when 
+In gradient based training Ill conditioning occurs when 
 In multi-dimensional space, it is common to have different curvature (defined by $2^\circ$) at different direction 
 
 Hessian matrix $\mathrm{H}$ is defined as Jacobian of the gradient, which represents curvature of the $\mathcal{Obj}(\phi)$ and takes form as 
