@@ -9,7 +9,7 @@ Ill conditioning is one of the most common challenges in numerical optimization.
 \begin{equation}
     f(x_0-\mu\mathcal{g}) \sim f(x_0) - \mu g^Tg + \frac{1}{2}\mu^2g^T\mathrm{H}g
 \end{equation}
-where $\mu$ is model training rate, $x_0$ is the previous evaluation point, current evalu
+where $\mu$ is model training rate, $x_0$ is the previous evaluation point, current evaluation point given by 
 In multi-dimensional space, it is common to have different curvature (defined by $2^\circ$) at different direction 
 
 Hessian matrix $\mathrm{H}$ is defined as Jacobian of the gradient, which represents curvature of the $\mathcal{Obj}(\phi)$ and takes form as 
