@@ -8,7 +8,7 @@ grid:
   rows: 1
   columns: 1
   grid_elements:
-  - path: figures/saddle-point/Optimum_Challenges.svg
+  - path: figures/saddle-point/Optimum_Challenges.png
     type: static
     from:
     - 1
@@ -17,4 +17,4 @@ grid:
     - 1
     - 1
     folder_url: "/users/74776/articles/356680/master/folder/figures/saddle-point"
-    url: "/users/74776/articles/356680/master/file/figures/saddle-point/Optimum_Challenges.svg"
+    url: "/users/74776/articles/356680/master/file/figures/saddle-point/Optimum_Challenges.png"
