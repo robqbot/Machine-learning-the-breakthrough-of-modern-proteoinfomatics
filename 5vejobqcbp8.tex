@@ -5,7 +5,7 @@ Optimisation is an active developing field, new algorithms have been developed c
 \paragraph {First Order Algorithms}
 Optimisation in machine learning can be generalized as finding network configuration $\phi$ to make $\mathcal{Obj}(\phi)$ minimum. For a multi-dimensional input $\Phi$, directional gradient in the direction $\mathcal{u}$ defined by $\mathcal{u}^T\bigtriangledown_{\Phi}\mathcal{Obj}(\Phi)$. Directional gradient provides information about the changing direction of $\mathcal{Obj}(\Phi)$ in a direction $\mathcal{u}$, to minimise $\mathcal{Obj}(\Phi)$, we can decrease $\mathcal{Obj}$ towards direction that offer most negative gradient, which gives:
 \begin{equation}
-    \phi_{new} = \phi - \mu\bigtriangle_{\phi}\mathcal{Obj}(\phi)
+    \phi_{new} = \phi - \mu\bigtriangledown_{\phi}\mathcal{Obj}(\phi)
 \end{equation}
 
 
