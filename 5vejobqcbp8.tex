@@ -25,7 +25,7 @@ In addition to gradients, curvature (second derivative) can provide addition inf
 \end{equation}
 In the context of machine learning, Hessian matrix is often real and symmetric. In multi-dimensional input evaluation, the curvature at direction $\mathcal{u}$ is given by $\mathcal{u}^TH\mathcal{u}$. Therefore, the evaluation of $f(x)$ around current $x_0$ under Taylor approximation gives:
 \begin{equation}
-    \label{TaylorEvaluation}
+    \label{eqTaylorEvaluation}
     f(x) \approx f(x_0)+(x-x_0)^Tg+\frac{1}{2}(x-x_0)^TH(x-x_0)
 \end{equation}
 where $g$ is the gradient at $x_0$, $H$ is the curvature at $x_0$. 
