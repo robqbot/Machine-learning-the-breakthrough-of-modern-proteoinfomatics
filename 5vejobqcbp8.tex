@@ -28,7 +28,7 @@ In the context of machine learning, Hessian matrix is often real and symmetric. 
     \label{eq:TaylorEvaluation}
     f(x) \approx f(x_0)+(x-x_0)^Tg+\frac{1}{2}(x-x_0)^TH(x-x_0)
 \end{equation}
-where $g$ is the gradient at $x_0$, $H$ is the curvature at $x_0$. If training rate is $\mu$, current evaluation point is given by $x_0-\mu\mathcal{g}$, the evaluation of $x_0-\mu\mathcal{g}$ is defined as:
+where $g$ is the gradient at $x_0$, $H$ is the curvature at $x_0$. If training rate is $\mu$, current evaluation point is given by $x_0-\mu\mathcal{g}$, the evaluation of $x_0-\mu\mathcal{g}$ is defined by:
 
 \begin{equation}
     f(x_0-\mu\mathcal{g}) \sim f(x_0) - \mu g^Tg + \frac{1}{2}\mu^2g^T\mathrm{H}g
