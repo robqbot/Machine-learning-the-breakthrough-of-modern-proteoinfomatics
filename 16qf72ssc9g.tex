@@ -6,7 +6,7 @@ Optimization is traditionally very difficult task. Model training in machine lea
     \item Ill conditioning\\
 Ill conditioning is one of the most common challenges in numerical optimization. The condition number is a measurement of how sensitive the output of a model is to a small change in input. Commonly the condition number is used to measure the tolerance of a model to an input noise. In machine learning, this challenge is most prevalent in second-order algorithm based model training.\\
 
-According to second order Taylor approximation as in Equation~\ref{eq:TaylorEvaluation}, the model step evaluation is given by :
+According to second order Taylor approximation as in Equation~\ref{eq:TaylorEvaluation}, the model step evaluation is given by Equation~\ref{:
 
 The term $\mu g^Tg$ defines the improvement quantity, $\frac{1}{2}\mu^2g^T\mathrm{H}g$ defines the correction due to curvature. Ill conditioning occurs when curvature correction term is overpowering the improvement quantity determined by gradient, which essentially means an impaired model training performance. \\
 \citet{Goodfellow-et-al-2016} argue although some methods like Newton's method can resolve the conflicts imposed by Hessian matrix $\mathrm{H}$ poor conditioning, but the application of Newton's method in training neural network models requires heavy modification and is inefficient and error prone. 
