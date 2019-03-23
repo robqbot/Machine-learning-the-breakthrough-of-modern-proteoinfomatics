@@ -6,7 +6,7 @@ Optimization is traditionally very difficult task. Model training in machine lea
     \item Ill conditioning\\
 Ill conditioning is one of the most common challenges in numerical optimization. The condition number is a measurement of how sensitive the output of a model is to a small change in input. Commonly the condition number is used to measure the tolerance of a model to an input noise. In machine learning, this challenge is most prevalent in second-order algorithm based model training.\\
 
-According to second order Taylor approximation as in Equation~\ref{labGiven the model step evaluation as:
+According to second order Taylor approximation as in Equation~\ref{Given the model step evaluation as:
 
 \begin{equation}
     f(x_0-\mu\mathcal{g}) \sim f(x_0) - \mu g^Tg + \frac{1}{2}\mu^2g^T\mathrm{H}g
