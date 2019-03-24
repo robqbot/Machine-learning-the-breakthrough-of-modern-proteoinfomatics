@@ -17,7 +17,7 @@ As a convention, the collection of all gradients (partial derivatives) for $\mat
     \item Stochastic Gradient Descent (SGD)\\
 SGD is arguably the most popular optimization algorithm due to its easy concept, relatively low computation burden and relatively fast training speed. Compare to gradient descent, which has a constant gradient over entire training dataset and issue one  model parameter $\phi$ update per epoch; SGD updates model parameter $\phi$ on per sample basis, which results much accelerated training. The training gradient in SGD for the training set with the size of $m$ is updated after each training sample $i$, which adopts the form: 
 \begin{equation}
-    g \approx \frac{1}{m}H\sum_{i=1}
+    g \approx \frac{1}{m}H_\sum_{i=1}
 \end{equation}
 
 gradient on each training epoch 
