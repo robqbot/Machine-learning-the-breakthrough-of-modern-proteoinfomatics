@@ -20,7 +20,7 @@ The training gradient in SGD for the training set with the size of $m$ is update
 \begin{equation}
     g \approx \frac{1}{m}H_{\phi}\sum_{i=1}^m\mathcal{Obj}(\phi)_i
 \end{equation}
-The model parameter $\phi$ is updated after each sample evaluation by $\phi_{i+1} = \phi_i - \mu g$. In a convex space, the gradient points towards minimum is decreasing after each training sample, employing a decreased learning rate $\mu_i$ over each iteration is beneficial not only in containing the range of SGD noise vibration, but also preventing overshooting the optimum due to large step size around minimum region and combating systematic noise associated with SGD. 
+The model parameter $\phi$ is updated after each sample evaluation by $\phi_{i+1} = \phi_i - \mu g$. In a convex space, the gradient points towards minimum is decreasing after each training sample, employing a decreased learning rate $\mu_i$ over each iteration is beneficial not only in containing the range of SGD noise vibration, but also preventing overshooting the optimum by  large step size around minimum region and combating systematic noise associated with SGD. 
 gradient on each training epoch 
     \item Momentum \\
 \end{enumerate}
