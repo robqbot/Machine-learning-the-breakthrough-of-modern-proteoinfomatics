@@ -22,7 +22,7 @@ The training gradient in SGD for the training set with the size of $m$ is update
 \end{equation}
 The model parameter $\phi$ is updated after each sample evaluation by $\phi_{i+1} = \phi_i - \mu g$. In a convex space, the gradient points towards minimum is decreasing after each training sample, employing a decreased learning rate $\mu_i$ over each iteration is beneficial not only in containing the range of SGD noise vibration, but also preventing overshooting the optimum if large step size around minimum region is taken during evaluation. 
     \item Momentum \\
-Exploring the face of more flat curvature with noise gradient (small but persistent) is challenging to train efficiently especially for large models due to insufficient gradient  Momentum is another popular algorithm designed for accelerate training
+Exploring the face of more flat curvature with noise gradient (small but persistent) is challenging to train efficiently especially for large models due to insufficient gradient Momentum is another popular algorithm designed for accelerate training
 
 \end{enumerate}
 
