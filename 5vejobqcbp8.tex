@@ -28,7 +28,7 @@ Stochastic gradient with momentum can be denoted in a form of exponential decay 
     \mathcal{v} = \lambda \mathcal{V} - \mu g \approx \lambda \mathcal{V} - \mu \mathcal{H}_{\phi} [\frac{1}{m} \sum_{i=1}^m
     \mathcal{Obj}(\phi)]
 \end{equation}
-where $\mathcal{V}$ is the average of the gradients $g = \mathcal{H}_{\phi} [\frac{1}{m} \sum_{i=1}^m \mathcal{Obj}(\phi)]$ across training set with $m$ training samples. $\lambda$ is a hyper-parameter with range $[0,1)$ and defines the weight of average gradients on the decay, where bigger 
+where $\mathcal{V}$ is the average of the gradients $g = \mathcal{H}_{\phi} [\frac{1}{m} \sum_{i=1}^m \mathcal{Obj}(\phi)]$ across training set with $m$ training samples. $\lambda$ is a hyper-parameter with range $[0,1)$ and defines the weight of average gradients on the decay, where bigger $\lam
 \end{enumerate}
 
 \paragraph{Second Oder Algorithms}
