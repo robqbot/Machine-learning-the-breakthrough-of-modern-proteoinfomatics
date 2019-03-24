@@ -19,7 +19,7 @@ SGD is arguably the most popular optimization algorithm due to its easy concept,
 \begin{equation}
     g \approx \frac{1}{m}H_{\phi}\sum_{i=1}^m\mathcal{Obj}(\phi)_i
 \end{equation}
-The model parameter $\phi$ is updated after each sample evaluation by $\phi_{i+1} = \phi_i - \mu g$. In a convex space, the gradient points towards minimum is decreasing after each training, it is common practise to adopt a decreased learning rate $\mu_i$ over each iteration. Major benefits by adopting vanishing gradient in SGD include: preventing overshooting the optimum due to large step size around minimum region and combating systematic noise associated with SGD. S
+The model parameter $\phi$ is updated after each sample evaluation by $\phi_{i+1} = \phi_i - \mu g$. In a convex space, the gradient points towards minimum is decreasing after each training, it is common practise to adopt a decreased learning rate $\mu_i$ over each iteration. Major benefits by adopting vanishing gradient in SGD include: preventing overshooting the optimum due to large step size around minimum region and combating systematic noise associated with SGD. The noise associatedd
 gradient on each training epoch 
     \item Momentum \\
 \end{enumerate}
