@@ -28,7 +28,7 @@ Stochastic gradient with momentum can be denoted as:
     \mathcal{v} = \lambda \mathcal{V} - \mu g \approx \lambda \mathcal{V} - \mu \mathcal{H}_{\phi} [\frac{1}{m} \sum_{i=1}^m
     \mathcal{Obj}(\phi)]
 \end{equation}
-where $\mathcal{V}$ is the collection of gradients $g = \mathcal{H}_{\phi} [\frac{1}{m} \sum_{i=1}^m
+where $\mathcal{V}$ is the av of gradients $g = \mathcal{H}_{\phi} [\frac{1}{m} \sum_{i=1}^m
     \mathcal{Obj}(\phi)] $ across training set with training elements of $m$ $\lambda$ is a hyper-parameter with range $[0,1)$ and defines the weight of last gradient of the 
 \end{enumerate}
 
