@@ -68,7 +68,7 @@ In order to avoid evaluation issues (more discussion as below) and improve evalu
 Newton's method is approximation method adopting second order Taylor series for evaluating $\mathcal{Obj}(\phi_{i+1})$ at previous $\phi_i$, which is given by:
 
 \begin{align}
-    \mathcal{Obj}(\phi_{i+1}) \approx   
+    \mathcal{Obj}(\phi_{i+1}) &\approx   
     \mathcal{Obj}(\phi_{i}) + (\phi_{i+1}-\phi_i)^T \nabla_{\phi}\mathcal{Obj}(\phi_{i}) 
     + \frac{1}{2}(\phi_{i+1}-\phi_i)^T H (\phi_{i+1}-\phi_i) \\
     \Rightarrow 
