@@ -36,7 +36,7 @@ AdaGrad adapts the initial learning rate $\mu$ for each epoch to give model para
 \begin{equation}
     \phi_{i+1} = \phi_{i} + \Delta \phi = \phi_i - \frac{\mu}{\delta + \sqrt{\tau}} \odot \mathcal{g}
 \end{equation}
-where $\delta$ is a small stabilization constant with a magnitude of $10^{-7}$
+where $\delta$ is a small stabilization constant with a magnitude of $10^{-7}$. 
 AdaGrad algorithm allows large updates for infrequent parameters and only small updates for frequent ones, which makes AdaGrad is particular suited for training models over sparse datasets. 
 \end{enumerate}
 
