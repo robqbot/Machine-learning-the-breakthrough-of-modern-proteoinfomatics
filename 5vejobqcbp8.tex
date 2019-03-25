@@ -32,7 +32,7 @@ The step update is provided by $\phi_{i+1} = \phi_i + \mathcal{v}_{i+1}$. $\math
     
     \item AdaGrad \\
 AdaGrad is one of the adaptive learning rate algorithms. Majority of model trainings in machine learning is iterative in nature and requires the explicit specification of initial conditions. As we discuss in later sections, there are many pit holes that prevent the convergence of model trainings that we do not have sufficient measures to avoid, the choice of initial conditions plays an important role in determining the successfulness and efficiency of model training. Morden training strategies are generally heuristic in nature. One of the key parameters is learning rate $\mu$, due to the tendency of $\mathcal{Obj}$ to have vastly discrepancies in response to changing parameter $\phi$ in different optimisation space. $\mu$ therefore can be mitigated at per optimisation space basis to facilitate efficient model trainings. \\
-AdaGrad adapts the learning rate $
+AdaGrad adapts the learning rate $\mu$ for each 
 AdaGrad algorithm allows large updates for infrequent parameters and only small updates for frequent ones, which makes AdaGrad is particular suited for training models over sparse datasets. 
 \end{enumerate}
 
