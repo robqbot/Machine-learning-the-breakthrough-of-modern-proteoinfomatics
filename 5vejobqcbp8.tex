@@ -39,7 +39,7 @@ AdaGrad~\cite{Duchi:2011} adapts the initial learning rate $\mu$ for each evalua
 where $\delta$ is a small stabilization constant with a magnitude of $10^{-7}$. $\tau_i$ is the accumulation of squared sum of previous evaluation, $\tau_0 = 0$. $\mu$ is predefined initial learning rate and $\mathcal{g}$ is the gradient of $\mathcal{Obj}$ at current evaluation. \\ 
 Overall, AdaGrad algorithm tends to accelerate the exploration over $mathcal{Obj}$ space, but the accumulation of previous iteration gradients can result retarded training efficiency if $mathcal{Obj}$ space has cliff regions where gradient change is dramatic. Furthermore, AdaGrad methods is configured to propagate large update steps for infrequent parameters and only small update steps for frequent ones, which makes AdaGrad a particular suited method for training models over sparse datasets. \\
 
-    \item Adaptive MomentsAdam \\
+    \item Adaptive Moments (Adam \\
 Adaptive 
 \end{enumerate}
 
