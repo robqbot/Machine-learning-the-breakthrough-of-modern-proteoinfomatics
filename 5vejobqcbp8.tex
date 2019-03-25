@@ -86,7 +86,7 @@ Newton's method is not well suited for evaluating large models due to heavy comp
 Heavy computational burden caused by inverse Hessian matrix can be sufficiently mitigated by conjugate gradient method. In conjugate gradients algorithm, training iteration $i+1$ will take searching direction $\mathrm{d}$ defined as:
 
 \begin{equation}
-    \mathcal{d}_{i+1} = \nabla_{\phi}\mathcal{Obj}(\phi) + \beta_{i+1}\mathrm{d}_i
+    \mathcal{d}_{i+1} = \nabla_{\phi}\mathcal{Obj}(\phi) + \beta_{i+1}\mathcal{d}_i
 \end{equation} 
-where $\beta_{i+1}$ is a hyperparameter that adjust the contribution of search direction from previous iteration. 
+where $\beta_{i+1}$ is a hyperparameter that adjust the contribution of search direction from previous iteration. $
 \end{enumerate}
