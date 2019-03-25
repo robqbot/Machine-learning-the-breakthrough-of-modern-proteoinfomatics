@@ -37,7 +37,7 @@ AdaGrad adapts the initial learning rate $\mu$ for each evaluation to give model
     \phi_{i+1} = \phi_{i} + \Delta \phi = \phi_i - \frac{\mu}{\delta + \sqrt{\tau_i}} \odot \mathcal{g}
 \end{equation}
 where $\delta$ is a small stabilization constant with a magnitude of $10^{-7}$. $\tau_i$ is the accumulation of squared sum of previous evaluation, $\tau_0 = 0$. $\mu$ is predefined initial learning rate and $\mathcal{g}$ is the gradient of $\mathcal{Obj}$ at current evaluation. \\ 
-AdaGrad algorithm p large updates for infrequent parameters and only small updates for frequent ones, which makes AdaGrad is particular suited for training models over sparse datasets. 
+AdaGrad algorithm propargates large updates for infrequent parameters and only small updates for frequent ones, which makes AdaGrad is particular suited for training models over sparse datasets. 
 \end{enumerate}
 
 \paragraph{Second Oder Algorithms}
