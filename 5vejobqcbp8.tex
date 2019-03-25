@@ -31,7 +31,7 @@ Stochastic gradient with momentum can be denoted in a form of exponential decay 
 The step update is provided by $\phi_{i+1} = \phi_i + \mathcal{v}_{i+1}$. $\mathcal{v}_i$ is the sum of the gradient terms $g = \mathcal{H}_{\phi} [\frac{1}{m} \sum_{i=1}^m \mathcal{Obj}(\phi)]$ across training set with $m$ training samples. $\lambda$ is a hyper-parameter with range $[0,1)$ and defines the weight of  gradient terms on the decay, where a bigger $\lambda$ relative to $\mu$, a stronger weight of previous gradient. 
     
     \item AdaGrad \\
-AdaGrad is one of the adaptive learning rate algorithms. Majority of model trainings in machine learning is iterative in nature and requires the explicit specification of initial conditions. As we discuss in later sections, there are many pit holes that prevent the convergence of model trainings that we do not have sufficient measures to avoid, the choice of initial conditions plays an important role in determining the successfulness of model training.  Neural network trainings 
+AdaGrad is one of the adaptive learning rate algorithms. Majority of model trainings in machine learning is iterative in nature and requires the explicit specification of initial conditions. As we discuss in later sections, there are many pit holes that prevent the convergence of model trainings that we do not have sufficient measures to avoid, the choice of initial conditions plays an important role in determining the successfulness and efficientof model training.  Neural network trainings 
 \end{enumerate}
 
 \paragraph{Second Oder Algorithms}
