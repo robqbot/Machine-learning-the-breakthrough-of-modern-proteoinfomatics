@@ -77,7 +77,7 @@ Newton's method is approximation method adopting second order Taylor series for 
 where $H$ is the Hessian matrix for $Obj$ at $\phi_i$. As long as $\mathcal{Obj}$ is convex, model can be trained iteratively. For the non-convex $\mathcal{Obj}$ space, Newton's method only valid if Hessian $H$ is positively defined, it is considered dangerous as training can go into adverse direction. \citet{Levenberg_1944} and~\citet{Marquardt_1963} proposed Levenberg-Marquardt algorithm, which provides a regularization strategy to combat non-convex divergence problem during training using Newton's method. The step update is then given by: 
 
 \begin{equation}
-    \phi_{i+1} = \phi_i - [H\mathcal{Obj}(\phi_i) + \alpha \math]
+    \phi_{i+1} = \phi_i - [H\mathcal{Obj}(\phi_i) + \alpha \mathcal{I}]^{-1}
 \end{equation}
 
 \end{enumerate}
