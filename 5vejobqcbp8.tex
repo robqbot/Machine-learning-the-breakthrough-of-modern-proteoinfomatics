@@ -89,4 +89,5 @@ Heavy computational burden caused by inverse Hessian matrix can be sufficiently 
     \mathcal{d}_{i+1} = \nabla_{\phi}\mathcal{Obj}(\phi) + \beta_{i+1}\mathcal{d}_i
 \end{equation} 
 where $\beta_{i+1}$ is a hyperparameter that adjust the contribution of search direction from previous iteration. $\mathcal{d}_{i+1}$ and $\mathcal{d}_{i}$ are conjugate that gives $\mathcal{d}_{i+1}^T H \mathcal{d}_{i} = 0$. Imposing conjugate is a computational expensive exercise and two algorithms raise to prominence that provides the possibilities to directly calculate $\beta_{i+1}$. 
+
 \end{enumerate}
