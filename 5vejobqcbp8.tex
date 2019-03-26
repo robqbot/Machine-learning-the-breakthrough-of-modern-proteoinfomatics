@@ -90,7 +90,7 @@ Heavy computational burden caused by inverse Hessian matrix can be sufficiently 
 \end{equation} 
 where $\beta_{i+1}$ is a hyperparameter that adjust the contribution of search direction from previous iteration. $\mathcal{d}_{i+1}$ and $\mathcal{d}_{i}$ are conjugate that gives $\mathcal{d}_{i+1}^T H \mathcal{d}_{i} = 0$. Imposing conjugate is a computational expensive exercise and two algorithms raise to prominence that provides the possibilities to directly calculate $\beta_{i+1}$. 
 
-Polak-Ribi\`ere method defines $\beta_{i+1}$ as:
+Polak-Ribi\`ere method~ defines $\beta_{i+1}$ as:
 \begin{equation}
     \beta_{i+1} = \frac {(\mathcal{g}_{i+1}-\mathcal{g}_i)^T\mathcal{g}_i}{\mathcal{g}_{i}^T\mathcal{g}_{i}}
 \end{equation}
