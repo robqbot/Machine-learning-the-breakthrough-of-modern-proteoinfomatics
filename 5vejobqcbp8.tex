@@ -98,5 +98,5 @@ Another popular approach is Fletcher-Reeves method~\cite{Fletcher_1964}:
 \begin{equation}
     \beta_{i+1} = \frac {\mathcal{g}_{i+1}^T\mathcal{g}_i}{\mathcal{g}_i^T\mathcal{g}_i}
 \end{equation}
-In the case of non-linear conjugate gradients, it is a common practise to resign $\beta_{i+1} = 0$. The search direction $\mathcal{d}$ for the next evaluation is then given by $\mathcal{d}_{i+1} = -\mathcal{g} + \beta_{i+1}\mathcal{d}_i$. The optimum learning rate for next iteration is then given by $\mu_{i+1} = argmin \frac{1}{m}\sum_{i=1}^m \mathcal{Obj}(\phi + \mu \mathcal{d})$, where $\mu_{i+1}$ is commonly solved numerically in a i
+In the case of non-linear conjugate gradients, it is a common practise to resign $\beta_{i+1} = 0$. The search direction $\mathcal{d}$ for the next evaluation is then given by $\mathcal{d}_{i+1} = -\mathcal{g} + \beta_{i+1}\mathcal{d}_i$. The optimum learning rate for next iteration is then given by $\mu_{i+1} = argmin \frac{1}{m}\sum_{i=1}^m \mathcal{Obj}(\phi + \mu \mathcal{d})$, where $\mu_{i+1}$ is commonly solved numerically with a iterative fashion. 
 \end{enumerate}
