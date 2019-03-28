@@ -8,12 +8,13 @@ grid:
   rows: 1
   columns: 1
   grid_elements:
-  - path: figures/AI_wrapper/AI_wrapper.csv
-    type: table
+  - path: figures/AI_wrapper/AI_wrapper.numbers.zip
+    type: static
     from:
     - 1
     - 1
     to:
     - 1
     - 1
-    url: "/users/74776/articles/356680/master/file/figures/AI_wrapper/AI_wrapper.csv"
+    folder_url: "/users/74776/articles/356680/master/folder/figures/AI_wrapper"
+    url: "/users/74776/articles/356680/master/file/figures/AI_wrapper/AI_wrapper.numbers.zip"
