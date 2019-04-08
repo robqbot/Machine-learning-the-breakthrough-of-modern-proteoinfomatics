@@ -17,7 +17,7 @@ Unsupervised learnings often involve finding a close representation of a big giv
 \paragraph{Principal Components Analysis (PCA)}
 PCA is one of the most common data compression algorithm in unsupervised learnings to reduce data dimensionality. This is particular useful when the underlie dataset too high in dimensions to learn efficiently. The result construct can be perceived as a projection of the target dataset $\mathcal{x}$ into $\mathcal{k}$ dimensions and is typically a linear transformation of given dataset $\mathcal{x}$.
 \par 
-One of the major benefit of PCA is the ability to transform underlie dataset into a representation with uncorrelated com
+One of the major benefit of PCA is the ability to transform underlie dataset into a representation with uncorrelated components
 
 \paragraph{$\mathcal{k}$-means Clustering}
 In $\mathcal{k}$-means clustering, the training dataset is divided into $\mathcal{k}$ clusters that are close to each other.  $\mathcal{k}$-means clustering often utilise one-hot encoding to represent input dataset $\mathcal{x}$, where one-hot encoding adopts a string of only one high bit (i.e. one) and rest of low bit (i.e.zero) combination in representation~\cite{Harris:2012:DDC:2381028}. Therefore, $\mathcal{k}$-means clustering can be perceived as a representation with $\mathcal{k}$-dimensional one-hot vector $\Gamma$. For example, a data entry $\mathcal{x}_i \in$ cluster $\mathcal{i}$ can be presented by one-hot vector $\Gamma$ with $\gamma_i = 1$, the rest $\mathcal{k}-1$ entries equal to zero.
