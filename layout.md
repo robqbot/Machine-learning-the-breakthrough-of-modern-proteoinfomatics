@@ -26,7 +26,6 @@ kfu8nhbqnu.tex
 figures/saddle-point
 d07hk434jkg.tex
 njbhpgj9b5.tex
-srljll42p5o.tex
 lip04p7omeg.tex
 bc5k8o2n2rg.tex
 figures/AI_wrapper1
