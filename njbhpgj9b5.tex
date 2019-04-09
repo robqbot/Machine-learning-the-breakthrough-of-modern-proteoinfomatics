@@ -44,7 +44,7 @@ To generalize into classification models, we can define binary class distributio
 where $\phi$ is model parameter matrix and $\psi$ is an sigmoid function. Solving for optimum parameter matrix $\phi$ is somewhat difficult, given that there is no closed-form solution to its optimum. A common approach is to search the parameter space by maximizing the log-likelihood. 
 
 \paragraph{Support Vector Machines (SVMs)}
-SVMs are driven by linear function $\mathcal{w}^T\mathcal{x}+b$. The diversity of SVMs provided by the form of kernels. Kernels are diverse and can take forms of linear, non-linear, polynomial, radial basis function and sigmoid. The kernel functions return the inner product, which is computationally favourable in high-dimensional space. 
+SVMs are driven by linear function $\mathcal{w}^T\mathcal{x}+b$. The diversity of SVMs provided by the form of kernels. Kernels are diverse and can take forms of linear, non-linear, polynomial, radial basis function sigmoid. The kernel functions return the inner product, which is computationally favourable in high-dimensional space. 
 Kernel tricks precondition that machine learning algorithms can take form of dot products between examples. Kernel function is then defined as $\mathcal{k}(\mathcal{x},\bar\mathcal{x})$, where $\bar\mathcal{x}$ denotes training dataset. For linear regression, kernel function can take the form:
 
 \begin{equation}
