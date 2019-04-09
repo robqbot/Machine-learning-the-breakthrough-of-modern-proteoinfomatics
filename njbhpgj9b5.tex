@@ -49,7 +49,7 @@ SVMs are driven by linear function $\mathcal{w}^T\mathcal{x}+b$
 Kernel tricks precondition that machine learning algorithms can take form of dot products between examples. Kernel function is then defined as $\mathcal{k}(\mathcal{x},\bar \mathcal{x})$, where $\bar \mathcal{x}$ denotes training dataset. For linear regression, kernel function has the form:
 
 \begin{equation}
-    \mathcal{k}(\mathcal{x},\bar \mathcal{x}) = \psi(x)
+    \mathcal{k}(\mathcal{x},\bar \mathcal{x}) = \psi(x) \dot
 \end{equation}
 
 Kernel tricks enable the study of non-linear relationships with respect to input $\mathrm{X}$ by guarantee a convergence under convex optimization. Furthermore, kernel function $\mathcal{k}$ is computationally more efficient than taking the dot product of two feature functions 
