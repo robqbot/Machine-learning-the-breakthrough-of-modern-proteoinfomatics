@@ -26,6 +26,7 @@ kfu8nhbqnu.tex
 figures/saddle-point
 d07hk434jkg.tex
 njbhpgj9b5.tex
+figures/Supervised
 figures/PCA
 ifb7jc1i9do.tex
 lip04p7omeg.tex
