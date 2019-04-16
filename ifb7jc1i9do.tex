@@ -3,7 +3,7 @@ Backpropagation algorithm (often referred as backprop) was proposed by~\citet{we
 \par
 Calculating gradient of the objective function $\mathcal{Obj}$ numerically is computational expensive, backprop computes derivatives by propagating error term back through network via modifying the weight of each node, which is in general computational efficient comparing to matrix manipulations. 
 \par
-The gradient of a scaler $\mathcal{z}$ with respect to $\mathcal{x}$ can be derived from the start gradient multiply by the Jacobian that produce $\mathcal{z}$ until reach starting $\mathcal{x}$, for nodes with diverging branches, the sum of gradients from each branch will be taken. Nodes in the neural networks can be treated as a variable and commonly described by tensor $\mathcal{V}$. Jacobian of $\mathcal{z}$ with respect to tensor $\mathcal{V}$ in a single layer network construction  can then be written as:
+The gradient of a scaler $\mathcal{z}$ with respect to $\mathcal{x}$ can be derived from the start gradient multiply by the Jacobian that produce $\mathcal{z}$ until reach starting $\mathcal{x}$, for nodes with diverging branches, the sum of gradients from each branch will be taken. Nodes in the neural networks can be treated as a variable and commonly described by tensor $\mathcal{V}$. Jacobian of $\mathcal{z}$ with respect to tensor $\mathcal{V}$ in a single layer network construction, where  can then be written as:
 
 \begin{equation}
     \nabla_{\mathcal{V}}\mathcal{z} = \sum_i (\nabla_{\mathcal{\mathcal{V}}} Y_i)\frac{\partial\mathcal{z}}{\partial Y_i} = \sum_j \sum_i \frac{\partial Y_i} {\partial{\mathcal{V}}_j}\frac{\partial\mathcal{z}}{\partial Y_i}
