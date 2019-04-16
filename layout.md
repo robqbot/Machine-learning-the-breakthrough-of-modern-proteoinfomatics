@@ -20,6 +20,7 @@ figures/Loss_Classification
 6n76vs4sop.tex
 figures/Loss_Regression
 2li9ds4gacg.tex
+ifb7jc1i9do.tex
 kfu8nhbqnu.tex
 5vejobqcbp8.tex
 16qf72ssc9g.tex
@@ -28,7 +29,6 @@ d07hk434jkg.tex
 njbhpgj9b5.tex
 figures/Supervised
 figures/PCA
-ifb7jc1i9do.tex
 lip04p7omeg.tex
 bc5k8o2n2rg.tex
 figures/AI_wrapper1
