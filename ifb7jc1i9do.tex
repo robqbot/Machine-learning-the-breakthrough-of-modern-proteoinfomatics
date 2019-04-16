@@ -6,7 +6,7 @@ Calculating gradient of the objective function $\mathcal{Obj}$ numerically is co
 The gradient of a scaler $\mathcal{z}$ with respect to $\mathcal{x}$ can be derived from the start gradient multiply by the Jacobian that produce $\mathcal{z}$ until reach starting $\mathcal{x}$, for nodes with diverging branches, the sum of gradients from each branch will be taken. Nodes in the neural networks can be treated as a variable and commonly described by tensor $\mathcal{V}$. Jacobian of $\mathcal{z}$ with respect to tensor $\mathcal{V}$ can then be written as:
 
 \begin{equation}
-    \nabla_{\mathcal{V}}\mathcal{z} = \sum_i (\nabla_\{\mathcal{V}}\mathcal{Y}_i)\frac{\partial\mathcal{z}}{\partial\mathcal{Y}} = \sum_j \sum_i (\partial{Y})
+    \nabla_{\mathcal{V}}\mathcal{z} = \sum_i (\nabla_\{\mathcal{V}}\mathcal{Y}_i)\frac{\partial\mathcal{z}}{\partial\mathcal{Y}} = \sum_j \sum_i (\frac\partial{Y}_j)
 \end{equation}
 
 Back propagation calculations often needs to summarise many tensors. To calculate each tensor seperately involve large expense of memory, in practise, often adopt a single buffer approach where each value is only added to the buffer after computation.
