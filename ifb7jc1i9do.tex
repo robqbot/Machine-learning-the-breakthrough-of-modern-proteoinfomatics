@@ -3,6 +3,6 @@ Backpropagation algorithm (often referred as backprop) was proposed by~\citet{we
 \par
 Calculating gradient of the objective function $\mathcal{Obj}$ numerically is computational expensive, backprop computes derivatives by propagating error term back through network via modifying the weight of each node, which is in general computational efficient comparing to matrix manipulations. 
 \par
-The gradient of a scaler $\mathcal{z}$ with respect to $\mathcal{x}$ can be derived from the start gradient multiply by the Jacobian that produce $\mathcal{z}$ until reach starting $\mathcal{x}$, for nodes with diverging branches, the sum of gradients from each branch will be taken. Nodes in the neural networks can be treated as a variable and commonly described by tensor $\mathcal{V}$. Jacobian of the 
+The gradient of a scaler $\mathcal{z}$ with respect to $\mathcal{x}$ can be derived from the start gradient multiply by the Jacobian that produce $\mathcal{z}$ until reach starting $\mathcal{x}$, for nodes with diverging branches, the sum of gradients from each branch will be taken. Nodes in the neural networks can be treated as a variable and commonly described by tensor $\mathcal{V}$. Jacobian of the of 
 
 Back propagation calculations often needs to summarise many tensors. To calculate each tensor seperately involve large expense of memory, in practise, often adopt a single buffer approach where each value is only added to the buffer after computation.
