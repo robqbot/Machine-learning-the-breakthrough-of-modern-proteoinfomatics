@@ -30,6 +30,8 @@ njbhpgj9b5.tex
 figures/Supervised
 figures/PCA
 lip04p7omeg.tex
+llo0ff0ttrg.tex
+kvtgtmtgt4o.tex
 bc5k8o2n2rg.tex
 figures/AI_wrapper1
 i3a65pe9j4o.tex
