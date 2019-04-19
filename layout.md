@@ -32,7 +32,6 @@ figures/PCA
 lip04p7omeg.tex
 llo0ff0ttrg.tex
 kvtgtmtgt4o.tex
-figures/RNN
 figures/RNN1
 bc5k8o2n2rg.tex
 figures/AI_wrapper1
