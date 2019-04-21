@@ -8,7 +8,7 @@ grid:
   rows: 1
   columns: 1
   grid_elements:
-  - path: figures/RNN2/RNN2.png
+  - path: figures/RNN2/RNN.png
     type: static
     from:
     - 1
@@ -16,5 +16,5 @@ grid:
     to:
     - 1
     - 1
-    url: "/users/74776/articles/356680/master/file/figures/RNN2/RNN2.png"
     folder_url: "/users/74776/articles/356680/master/folder/figures/RNN2"
+    url: "/users/74776/articles/356680/master/file/figures/RNN2/RNN.png"
