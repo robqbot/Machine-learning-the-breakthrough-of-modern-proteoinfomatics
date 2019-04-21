@@ -8,4 +8,4 @@ RNNs can also be viewed as state model of feed forward networks. One of the dist
 \end{equation}
 where $S_i$ is the state at time step $k$, $\mathrm{W}$ is recursive weight that is accumulated through layers, $\mathcal{x}_k$ is the training input vector and $\mathcal{w}_x$ is the weight matrix at current layer. The model output of $y_k$ at a given time step $\mathcal{k}$ can be computed from state definition. The recursive nature of state definition dictates delayed feedback, which allows RNNs to maintain memories from previous time steps. This recursive nature and delayed feedback loop has been demonstrated in in Figure~\ref{344423}. 
 \par 
-RNNs models are commonly trained via back propagation through time (BPTT)~\cite{Goodfellow-et-al-2016}, despite some more efficiency improved methods have been studied.~\cite{963769,neco.1989,Gomez:2008:ANE:1390681.1390712} In training RNN 
+RNNs models are commonly trained via back propagation through time (BPTT)~\cite{Goodfellow-et-al-2016}, despite some more efficiency improved methods have been studied.~\cite{963769,neco.1989,Gomez:2008:ANE:1390681.1390712} In training RNN models
