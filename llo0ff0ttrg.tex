@@ -6,6 +6,6 @@ One of the distinctive advantages of RNNs comparing to feed forward networks is 
 \begin{equation}
     \mathrm{S}_k = \mathcal{f}(\mathrm{S}_{k-1} \cdot \mathrm{W} + \mathcal{x}_k \cdot \mathcal{w}_x)
 \end{equation}
-where $S_i$ is the state at time step $k$, $\mathrm{W}$ is recursive weight that is accumulated through layers, $\mathcal{x}_k$ is the training input vector and $\mathcal{w}_x$ is the weight matrix at current layer. The model output of $y_k$ at a given time step $\mathcal{k}$ can be derived from  RNN network is demonstrated in Figure~\ref{344423}. 
+where $S_i$ is the state at time step $k$, $\mathrm{W}$ is recursive weight that is accumulated through layers, $\mathcal{x}_k$ is the training input vector and $\mathcal{w}_x$ is the weight matrix at current layer. The model output of $y_k$ at a given time step $\mathcal{k}$ can be computed from from  RNN network is demonstrated in Figure~\ref{344423}. 
 \par 
 RNNs models can be trained via back propagation through time~\cite{Goodfellow-et-al-2016}, although some efficiency improved methods have been studied.~\cite{963769,neco.1989,Gomez:2008:ANE:1390681.1390712}
