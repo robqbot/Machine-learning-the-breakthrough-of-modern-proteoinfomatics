@@ -1,6 +1,7 @@
 abstract.html
 bhl4m27apmo.tex
 figures/ANN
+lpmtlda0068.tex
 qn2fu9f6bd8.tex
 qhrgljsffh8.tex
 figures/ANN_activation
